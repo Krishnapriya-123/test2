@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Signup page
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+    </head>
+    <body onsubmit="return sign()" style="background-color:mintcream">
+     <div class="w3-top">
+      <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto;">
+        <div class="row"><img style="text-align: center;" src="./facebook.png">
+        <div style="margin-left: 45%;margin-top: 5%;color: white;"><a href="./login.html">Log In to Existing Account</a></div>
+      </div> 
+     </div> 
+     <div class="container">
+     <form class="border" style="width:45%; margin-left: 25%; padding-left:5%;padding-top:2%; padding-bottom: 2%";>
+        <h1>Create a new account</h1>
+        <p style="color: slategrey;">It's quick and easy.</p>
+        <div style="margin-right: 28%;">
+            <input id="fn" type="text" required class="form-control" placeholder="First name">
+            <br>
+            <input id="ln" type="text" required class="form-control" placeholder="Last name">
+            <br>
+            <input id="Mn" required type="text" class="form-control" placeholder="Mobile number or email address">
+            <br>
+            <input id="pw" type="password" required class="form-control" placeholder="New password">
+        </div><br>
+        <div>
+            <h7 style="color: slategrey;">Date of Birth</h7>
+            <div class="dropdown-content">
+                <input type="date">
+            </div>
+        </div><br>
+        <div>
+            <h6 style="color: slategrey;">Gender</h6>
+                <label>Male</label>
+                <input type="radio" name="gender">
+                <label>Female</label>
+                <input type="radio" name="gender">
+                <label>Other</label>
+                <input type="radio" name="gender">
+        </div>
+        <br>
+        <p style="color: slategrey;">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+        <br>
+        <button class="form-control" style="background-color: green; color: white;">Sign Up</button>
+        <script src="./signup.js"></script>
+     </form>
+     </div>
+    
+    </body>
+</html>
